@@ -1,0 +1,21 @@
+{
+  "name": "gunrock-tailwind",
+  "version": "1.0.0",
+  "description": "Reusable Tailwind CSS theme for UC Davis branding",
+  "main": "index.js",
+  "keywords": [
+    "tailwind",
+    "ucd",
+    "tailwindcss",
+    "plugin",
+    "theme"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "tailwindcss": "^3.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.0"
+  }
+}
