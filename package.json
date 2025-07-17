@@ -1,17 +1,25 @@
 {
-  "name": "gunrock-tailwind",
+  "name": "@ucdavis/gunrock-tailwind",
   "version": "1.0.0",
   "description": "Reusable Tailwind CSS theme for UC Davis branding",
   "main": "index.js",
   "keywords": [
     "tailwind",
-    "ucd",
+    "ucdavis",
     "tailwindcss",
     "plugin",
     "theme"
   ],
-  "author": "Your Name",
+  "author": "cydoval <cydoval@ucdavis.edu>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucdavis/gunrock-tailwind.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ucdavis/gunrock-tailwind/issues"
+  },
+  "homepage": "https://github.com/ucdavis/gunrock-tailwind#readme",
   "peerDependencies": {
     "tailwindcss": "^3.0.0"
   },
