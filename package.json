@@ -1,6 +1,6 @@
 {
   "name": "@ucdavis/gunrock-tailwind",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Tailwind + DaisyUI preset for UC Davis branding",
   "main": "index.js",
   "files": [
@@ -8,7 +8,12 @@
     "colors.js",
     "daisyui-theme.js"
   ],
-  "keywords": ["tailwind", "daisyui", "ucdavis", "theme"],
+  "keywords": [
+    "tailwind",
+    "daisyui",
+    "ucdavis",
+    "theme"
+  ],
   "peerDependencies": {
     "tailwindcss": "^3.0.0",
     "daisyui": "^3.0.0"
