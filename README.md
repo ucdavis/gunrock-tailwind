@@ -2,15 +2,19 @@ tailwind config file for UC D projects
 
 npm install @ucdavis/gunrock-tailwind
 
-// tailwind.config.js
-const preset = require('@ucdavis/gunrock-tailwind');
+global.css should look like
 
-module.exports = {
-...preset,
-content: ['./src/**/*.{js,ts,jsx,tsx,html}'],
-};
+@import 'tailwindcss';
+@plugin "daisyui";
+@import './gunrocktailwind.css';
 
-global css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+you can overide both daisy and tailwind like below
+
+@plugin "daisyui/theme" {
+name: 'gunrock';
+--color-primary: var(--color-ucd-doubledecker);
+}
+
+@theme inline {
+--color-primary-color: var(--color-ucd-recpool);
+}
