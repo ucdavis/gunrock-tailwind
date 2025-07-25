@@ -1,20 +1,28 @@
-tailwind config file for UC D projects
+# UC Davis CAES Tailwind + DaisyUI Branding
 
-npm install @ucdavis/gunrock-tailwind
+This is NPM gunrock tailwind for application development at CAES CRU
 
-global.css should look like
+## Features
 
-@import 'tailwindcss';
-@plugin "daisyui";
-@import './gunrocktailwind.css';
+- **Tailwind colors and fonts**
+- **DaisyUI theme Gunrock**
 
-you can overide both daisy and tailwind like below
+To use, add
 
+```
+@import "@ucdavis/gunrock-tailwind/imports.css";
+```
+
+In global.css underneath Tailwind and Daisy
+
+To customize you can add tailwind and daisy themes like such:
+
+```
+@theme {
+  --color-cru-border: oklch(0.283 0.0091 285.81);
+}
 @plugin "daisyui/theme" {
-name: 'gunrock';
---color-primary: var(--color-ucd-doubledecker);
+  name: "gunrock";
+  --color-base-100: var(--color-dark-bg-100);
 }
-
-@theme inline {
---color-primary-color: var(--color-ucd-recpool);
-}
+```
