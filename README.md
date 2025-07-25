@@ -26,3 +26,8 @@ To customize you can add tailwind and daisy themes like such:
   --color-base-100: var(--color-dark-bg-100);
 }
 ```
+Add 
+```
+data-theme="gunrock"
+```
+To the <body> tag in the layout
