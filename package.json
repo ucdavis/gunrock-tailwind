@@ -1,6 +1,6 @@
 {
   "name": "@ucdavis/gunrock-tailwind",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "Tailwind + DaisyUI preset for UC Davis branding",
   "main": "imports.css",
   "files": [
@@ -19,8 +19,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ucdavis/gunrock-tailwind"
-  },
-  "dependencies": {
-    "@ucdavis/gunrock-tailwind": "^2.2.0"
   }
 }
