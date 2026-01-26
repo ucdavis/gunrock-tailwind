@@ -36,6 +36,9 @@
   --color-dark-font: oklch(0.3132 0 0); /* dark gray */
   --color-light-font: oklch(99.9% 0.0045 106.7); /* near-white */
 
+  --color-ucd-blue: oklch(0.2783 0.0856 254.11);
+  --color-ucd-gold: oklch(0.8403 0.1724 84.08);
+
   /* backgrounds */
   --color-light-bg-100: oklch(100% 0 0); /* white */
   --color-light-bg-200: oklch(98% 0 0); /* off-white */
