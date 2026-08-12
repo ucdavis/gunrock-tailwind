@@ -1,25 +1,129 @@
+/*
+ * Legacy names are retained for existing applications. They intentionally keep
+ * their original weight/style metadata because each name represents one face.
+ */
 @font-face {
   font-family: "proxima-nova-r";
-  src: url("https://ucdcdn.azureedge.net/public/media/fonts/proximanova-regular-webfont.woff")
-    format("woff");
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-regular.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: fallback;
 }
 @font-face {
   font-family: "proxima-nova-i";
-  src: url("https://ucdcdn.azureedge.net/public/media/fonts/proximanova-regularit-webfont.woff")
-    format("woff");
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-regularit.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: fallback;
 }
 @font-face {
   font-family: "proxima-nova-b";
-  src: url("https://ucdcdn.azureedge.net/public/media/fonts/proximanova-bold-webfont.woff")
-    format("woff");
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-bold.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: fallback;
+}
+
+/* Proxima Nova's modern API uses one family with semantic weights and styles. */
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-thinit.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-lightit.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-regularit.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-mediumit.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-semiboldit.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-boldit.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-extrabold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("https://ucdcdn.blob.core.windows.net/public/media/fonts/proximanova/proximanova-extraboldit.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
   font-display: fallback;
 }
 @font-face {
@@ -32,6 +136,10 @@
 }
 
 @theme {
+  /* Typography */
+  --font-sans: "Proxima Nova", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "ryman", Georgia, serif;
+
   /* standard colors */
   --color-dark-font: oklch(0.3132 0 0); /* dark gray */
   --color-light-font: oklch(99.9% 0.0045 106.7); /* near-white */
